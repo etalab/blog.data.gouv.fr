@@ -20,10 +20,9 @@
     <meta property="og:description" content="Blog.data.gouv.fr"/>
 
 
-<!-- Bootstrap -->
+<!-- Style -->
 <link rel="stylesheet" href="https://etalab.github.io/blog.data.gouv.fr/en/../theme/css/theme.css" type="text/css"/>
 
-<link href="https://etalab.github.io/blog.data.gouv.fr/en/../theme/css/pygments/native.css" rel="stylesheet">
 
     <link href="https://etalab.github.io/blog.data.gouv.fr/en/feeds/all.atom" type="application/atom+xml" rel="alternate"
           title="Blog.data.gouv.fr ATOM Feed"/>
@@ -32,28 +31,69 @@
 
 </head>
 <body>
-<div class="navbar navbar-default" role="navigation">
+<nav class="main-navbar navbar navbar-default" role="navigation">
 	<div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a href="https://etalab.github.io/blog.data.gouv.fr/en/" class="navbar-brand">
-Blog.data.gouv.fr            </a>
+                <img class="logo"
+                    src="https://etalab.github.io/blog.data.gouv.fr/theme/images/logo-header.svg"
+                    alt="Data.gouv.fr logo" />
+            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="https://etalab.github.io/blog.data.gouv.fr/en/faq/">
+                             FAQ
+                          </a></li>
+                        <li >
+                            <a href="https://etalab.github.io/blog.data.gouv.fr/en/category/news/">News</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://etalab.github.io/blog.data.gouv.fr/theme/images/flag-en.svg"
+                        alt="en" width="20"/>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li >
+                            <a href="https://etalab.github.io/blog.data.gouv.fr/" title="fr">
+                                <img src="https://etalab.github.io/blog.data.gouv.fr/theme/images/flag-fr.svg"
+                                    alt="" width="20"/>
+                                    Français
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a>
+                                <img src="https://etalab.github.io/blog.data.gouv.fr/theme/images/flag-en.svg"
+                                    alt="" width="20"/>
+                                    English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+
         <!-- /.navbar-collapse -->
     </div>
-</div> <!-- /.navbar --><!-- Banner -->
+</nav> <!-- /.navbar --><!-- Banner -->
 <!-- End Banner -->
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
     <h1>Authors on Blog.data.gouv.fr</h1>
 
-    <ul>    </ul>
+    <ul>        <li><a href="https://etalab.github.io/blog.data.gouv.fr/en/author/axel-haustant.html">Axel Haustant</a> (1)</li>
+    </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -76,28 +116,55 @@ Blog.data.gouv.fr            </a>
         </div>
     </div>
 </div>
-<footer>
-   <div class="container">
-      <hr>
-      <div class="row">
-         <div class="col-xs-10">&copy;  Etalab
-            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
-      </div>
-   </div>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>The Open Data</h5>
+            </section>
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>Topics</h5>
+            </section>
+
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>Network</h5>
+                <ul>
+                </ul>
+            </section>
+
+            <section class="col-xs-6 col-sm-3 col-md-4 col-lg-4 social">
+                <h5>Contact</h5>
+                <a href="https://twitter.com/datagouvfr" title="Twitter">
+                    <span class="fa fa-twitter-square"></span>
+                </a>
+                <a href="https://fb.me/etalab" title="Facebook">
+                    <span class="fa fa-facebook-square"></span>
+                </a>
+                <a href="https://plus.google.com/117902389749487955734" title="Google+">
+                    <span class="fa fa-google-plus-square"></span>
+                </a>
+                <a href="https://github.com/etalab" title="github">
+                    <span class="fa fa-github-square"></span>
+                </a>
+                <a href="#" tabindex="-1" title="Feeds" class="feed-icon"
+                    data-toggle="popover" data-trigger="focus" data-placement="top"
+                    data-html="true" data-content="">
+                    <span class="fa fa-rss-square"></span>
+                </a>
+            </section>
+
+            <section class="col-xs-9 col-xs-offset-3 col-sm-offset-0 col-sm-2 col-md-2 col-lg-2">
+                <a href="http://www.etalab.gouv.fr" title="Go to Etalab’s blog">
+                    <img class="logo" src="https://etalab.github.io/blog.data.gouv.fr/theme/images/etalab.svg" alt="Etalab logo" />
+                </a>
+            </section>
+
+            <p class="bottom-right"><a href="#">Back to top</a></p>
+
+        </div>
+    </div>
 </footer>
 <script src="https://etalab.github.io/blog.data.gouv.fr/en/../theme/js/main.min.js"></script>
-
-<script src="https://etalab.github.io/blog.data.gouv.fr/en/../theme/js/jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://etalab.github.io/blog.data.gouv.fr/en/../theme/js/bootstrap.min.js"></script>
-
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://etalab.github.io/blog.data.gouv.fr/en/../theme/js/respond.min.js"></script>
-
-
 </body>
 </html>
