@@ -5,62 +5,62 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/</loc>
-<lastmod>2017-01-19T20:59:02-00:00</lastmod>
+<lastmod>2017-01-19T21:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/archives.html</loc>
-<lastmod>2017-01-19T20:59:02-00:00</lastmod>
+<lastmod>2017-01-19T21:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/tags.html</loc>
-<lastmod>2017-01-19T20:59:02-00:00</lastmod>
+<lastmod>2017-01-19T21:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/categories.html</loc>
-<lastmod>2017-01-19T20:59:02-00:00</lastmod>
+<lastmod>2017-01-19T21:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/faq/</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/faq.html</loc>
 <lastmod>2017-01-19T18:55:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/2017/01/19/lancement-du-blog-data-gouv-fr/</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/2017/01/19/lancement-du-blog-data-gouv-fr.html</loc>
 <lastmod>2017-01-19T18:57:00+01:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/category/nouveautes/</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/category/nouveautes.html</loc>
 <lastmod>2017-01-19T18:57:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/tag/blog/</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/tag/blog.html</loc>
 <lastmod>2017-01-19T18:57:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/tag/inauguration/</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/tag/inauguration.html</loc>
 <lastmod>2017-01-19T18:57:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
