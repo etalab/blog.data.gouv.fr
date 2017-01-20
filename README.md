@@ -17,6 +17,7 @@ inv watch
 ```
 
 You can connect on <http://localhost:5000> to see the website.
+Note that drafts will be available at <http://localhost:5000/drafts/>.
 
 ## Writing an article
 
