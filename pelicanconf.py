@@ -98,21 +98,27 @@ I18N_SUBSITES = {
 }
 
 
-# URLS Patterns
-INDEX_URL = 'index.html'
-INDEX_SAVE_AS = 'index.html'
+# Pretty URLS
+PAGE_URL = '{name}/'
+PAGE_SAVE_AS = '{name}/index.html'
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{name}.html'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{name}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{name}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{name}/index.html'
 
-CATEGORY_URL = 'category/{slug}.html'
-CATEGORY_SAVE_AS = 'category/{slug}.html'
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
-TAG_URL = 'tag/{slug}.html'
-TAG_SAVE_AS = 'tag/{slug}.html'
+TAG_URL = 'tag/{slug}/'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
 
-PAGE_URL = '{name}.html'
-PAGE_SAVE_AS = '{name}.html'
+TAGS_URl = 'tags/'
+TAGS_SAVE_AS = 'tags/index.html'
+
+AUTHOR_URL = 'authors/{slug}/'
+AUTHOR_SAVE_AS = 'authors/{slug}/index.html'
+
+ARCHIVES_URL = 'archvives/'
+ARCHIVES_SAVE_AS = 'archvives/index.html'
 
 # Sitemap configuration
 SITEMAP = {
