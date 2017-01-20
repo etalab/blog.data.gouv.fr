@@ -5,62 +5,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/en/</loc>
-<lastmod>2017-01-19T21:43:13-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/archives.html</loc>
-<lastmod>2017-01-19T21:43:13-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/tags.html</loc>
-<lastmod>2017-01-19T21:43:13-00:00</lastmod>
+<lastmod>2017-01-20T01:20:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://etalab.github.io/blog.data.gouv.fr/en/categories.html</loc>
-<lastmod>2017-01-19T21:43:13-00:00</lastmod>
+<lastmod>2017-01-20T01:20:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/faq.html</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/en/faq/</loc>
 <lastmod>2017-01-19T18:55:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/2017/01/19/data-gouv-fr-blog-launched.html</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/en/2017/01/19/data-gouv-fr-blog-launched/</loc>
 <lastmod>2017-01-19T18:59:00+01:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/category/news.html</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/en/category/news/</loc>
 <lastmod>2017-01-19T18:59:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/tag/blog.html</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/en/tag/blog/</loc>
 <lastmod>2017-01-19T18:59:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://etalab.github.io/blog.data.gouv.fr/en/author/axel-haustant.html</loc>
+<loc>https://etalab.github.io/blog.data.gouv.fr/en/authors/axel-haustant/</loc>
 <lastmod>2017-01-19T18:59:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
