@@ -9,8 +9,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *  # noqa
 
 
-# SITEURL = 'https://blog.data.gouv.fr'
-SITEURL = 'https://etalab.github.io/blog.data.gouv.fr'
+SITEURL = 'https://blog.data.gouv.fr'
 RELATIVE_URLS = False
 
 FEED_DOMAIN = SITEURL
