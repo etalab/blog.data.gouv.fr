@@ -49,11 +49,41 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li class="active"><a href="https://blog.data.gouv.fr/faq/">
-                             FAQ
-                          </a></li>
-                        <li >
-                            <a href="https://blog.data.gouv.fr/category/nouveautes/">Nouveautés</a>
+                <li>
+                    <a href="https://blog.data.gouv.fr/">Blog</a>
+                </li>
+                        <li class="active dropdown "
+                            data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                             <a href="https://blog.data.gouv.fr/faq/" class="dropdown-toggle">
+                                 FAQ
+                             </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://blog.data.gouv.fr/faq/citoyen/" title="Découvrir l'OpenData en tant que citoyen">
+                                        Découvrir l'OpenData en tant que citoyen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.data.gouv.fr/faq-developpeur/" title="Découvrir l’OpenData en tant que développeur">
+                                        Découvrir l’OpenData en tant que développeur
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.data.gouv.fr/faq/integrateur/" title="Découvrir l'OpenData en tant qu'intégrateur'">
+                                        Découvrir l'OpenData en tant qu'intégrateur'
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.data.gouv.fr/faq/producteur/" title="Découvrir l'OpenData en tant que producteur">
+                                        Découvrir l'OpenData en tant que producteur
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.data.gouv.fr/faq/reutilisateur/" title="Découvrir l'OpenData en tant que reutiliateur">
+                                        Découvrir l'OpenData en tant que reutiliateur
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -94,12 +124,51 @@
 <!-- End Banner -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-lg-12">
     <section id="content" class="body">
         <h1 class="entry-title">FAQ</h1>
-        <span class="label label-default">Langue</span>
-	<a href="https://blog.data.gouv.fr/en/faq/">en</a>
-
+<div class="row faq-header">
+<div class="col-md-2">
+    <a class="thumbnail" href="faq/citoyen/">
+      <div class="caption">
+        <h3>Citoyen</h3>
+        <p><p>Les fondamentaux de l'opendata pour les citoyens</p></p>
+      </div>
+    </a>
+</div>
+<div class="col-md-2">
+    <a class="thumbnail" href="faq/producteur/">
+      <div class="caption">
+        <h3>Producteur</h3>
+        <p><p>Que faut-il savoir avant de publier des données ?</p></p>
+      </div>
+    </a>
+</div>
+<div class="col-md-2">
+    <a class="thumbnail" href="faq/reutilisateur/">
+      <div class="caption">
+        <h3>Réutilisateur</h3>
+        <p><p>Que faire avec les données ? Avec quels outils ?</p></p>
+      </div>
+    </a>
+</div>
+<div class="col-md-2">
+    <a class="thumbnail" href="faq-developpeur/">
+      <div class="caption">
+        <h3>Développeur</h3>
+        <p><p>Comment intéragir avec la plateforme ? Avec quelles API ?</p></p>
+      </div>
+    </a>
+</div>
+<div class="col-md-2">
+    <a class="thumbnail" href="faq/integrateur/">
+      <div class="caption">
+        <h3>Intégrateur</h3>
+        <p><p>Quelles sont les intégrations tierces rendues possibles ?</p></p>
+      </div>
+    </a>
+</div>
+</div>
         <div class="entry-content">
             <p>La mission Etalab, placée sous l’autorité du Premier ministre au sein du SGMAP,
 a pour mission d’accompagner l’ouverture des données publiques de l’Etat et des administrations.
@@ -137,58 +206,8 @@ et <a href="https://twitter.com/etalab">@etalab</a>
 <p>L’équipe de cette plateforme est par ailleurs joignable par mail :
 <a href="mailto:info@data.gouv.fr">info@data.gouv.fr</a>.</p>
         </div>
+
     </section>
-        </div>
-        <div class="col-sm-3" id="sidebar">
-            <aside>
-
-<section class="well well-sm">
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-              <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
-                <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
-              </ul>
-            </li>
-
-            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Articles récents</span></h4>
-                <ul class="list-group" id="recentposts">
-                    <li class="list-group-item">
-                        <a href="https://blog.data.gouv.fr/2017/01/19/lancement-du-blog-data-gouv-fr/">
-                            Lancement du blog Data.gouv.fr
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="list-group-item"><a href="https://blog.data.gouv.fr/"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Catégories</span></h4></a>
-                <ul class="list-group" id="categories">
-                    <li class="list-group-item">
-                        <a href="https://blog.data.gouv.fr/category/nouveautes/">
-                            <i class="fa fa-folder-open fa-lg"></i> Nouveautés
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="list-group-item"><a href="https://blog.data.gouv.fr/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Mots-clés</span></h4></a>
-                <ul class="list-group list-inline tagcloud" id="tags">
-                    <li class="list-group-item tag-4">
-                        <a href="https://blog.data.gouv.fr/tag/blog/">
-                            blog
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://blog.data.gouv.fr/tag/inauguration/">
-                            inauguration
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-    </ul>
-</section>            </aside>
         </div>
     </div>
 </div>

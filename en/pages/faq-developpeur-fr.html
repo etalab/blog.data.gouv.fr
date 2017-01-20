@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Découvrir l’OpenData en tant que développeur - Blog.data.gouv.fr</title>
+<!-- Using the latest rendering mode for IE -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="https://blog.data.gouv.fr/en/images/favicon.png" rel="icon">
+
+
+    <meta name="author" content="Etalab" />
+
+<!-- Open Graph tags -->
+    <meta property="og:site_name" content="Blog.data.gouv.fr" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Blog.data.gouv.fr"/>
+    <meta property="og:url" content="https://blog.data.gouv.fr/en"/>
+    <meta property="og:description" content="Blog.data.gouv.fr"/>
+
+
+<!-- Style -->
+<link rel="stylesheet" href="https://blog.data.gouv.fr/en/../theme/css/theme.css" type="text/css"/>
+
+
+    <link href="https://blog.data.gouv.fr/en/feeds/all.atom" type="application/atom+xml" rel="alternate"
+          title="Blog.data.gouv.fr ATOM Feed"/>
+
+
+
+</head>
+<body>
+<nav class="main-navbar navbar navbar-default" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://blog.data.gouv.fr/en/" class="navbar-brand">
+                <img class="logo"
+                    src="https://blog.data.gouv.fr/theme/images/logo-header.svg"
+                    alt="Data.gouv.fr logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://blog.data.gouv.fr/en/">Blog</a>
+                </li>
+                        <li class="active "
+>
+                             <a href="https://blog.data.gouv.fr/en/faq/" >
+                                 FAQ
+                             </a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://blog.data.gouv.fr/en/archvives/">
+                        <i class="fa fa-th-list"></i>
+                        <span class="icon-label">Archives</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://blog.data.gouv.fr/theme/images/flag-en.svg"
+                            alt="en" width="20"/>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li >
+                            <a href="https://blog.data.gouv.fr/" title="fr">
+                                <img src="https://blog.data.gouv.fr/theme/images/flag-fr.svg"
+                                    alt="" width="20"/>
+                                Français
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a>
+                                <img src="https://blog.data.gouv.fr/theme/images/flag-en.svg"
+                                    alt="" width="20"/>
+                                English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav> <!-- /.navbar --><!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <section id="content" class="body">
+        <h1 class="entry-title">Découvrir l’OpenData en tant que développeur</h1>
+        <div class="entry-content">
+            <h2>Découvrir l’OpenData en tant que développeur</h2>
+<p>Cette page contient :</p>
+<ul>
+<li>les informations relatives à l’API</li>
+<li>le moissonnage des dépôts de données ouvertes</li>
+<li>le code source de la plateforme</li>
+</ul>
+<h2>Informations relatives à l’API</h2>
+<p>Le site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » propose différents moyen d'accéder au catalogue des données :</p>
+<ul>
+<li>une <a href="https://www.data.gouv.fr/api/">API complète</a>, documentée avec <a href="http://swagger.io/">Swagger</a></li>
+<li>des dumps au format CSV, mis à jour en temps réel
+<ul>
+<li>catalogue des jeux de données: <a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></li>
+<li>catalogue des ressources: <a href="https://www.data.gouv.fr/resources.csv">https://www.data.gouv.fr/resources.csv</a></li>
+<li>catalogue des organisations: <a href="https://www.data.gouv.fr/organizations.csv">https://www.data.gouv.fr/organizations.csv</a></li>
+<li>catalogue des réutilisations: <a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></li>
+<li>une liste des tags avec leur nombre d'occurences: <a href="https://www.data.gouv.fr/tags.csv">https://www.data.gouv.fr/tags.csv</a></li>
+</ul>
+</li>
+<li>des <a href="https://stats.data.gouv.fr/">statistiques de fréquentation anonymisées</a>, mises à jour toutes les heures</li>
+</ul>
+<p>L'intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
+(publication d'un jeu de données, création d'organisations, etc).
+Veuillez consulter la documentation dédiée pour y accéder.</p>
+<h2>Moissonnage des dépôts de données ouvertes</h2>
+<p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage,
+permettant d’être automatiquement intégrée sur la plateforme.
+Il est ainsi possible d’écrire son propre moissonneur en s’inspirant du code des moissonneurs existants,
+fournis en Open Source (comme tout le reste du site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> », distribué sous le nom uData).</p>
+<p>Aujourd'hui, les moissoneurs suivants sont disponibles :</p>
+<ul>
+<li>CKAN (générique)</li>
+<li>OpenDataSoft (générique)</li>
+<li>maaf (spécifique Ministère de l'Agriculture, de l'Agroalimentaire et de la Forêt)</li>
+</ul>
+<p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
+il est possible (voir recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
+<h2>Le code source de la plateforme</h2>
+<p>L’intégralité du code de la plateforme est gratuitement disponible en Open-Source sous licence AGPL3.
+Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer
+et de le personnaliser pour son usage propre en marque blanche.
+Nous avons par exemple développé les modules udata-gouvfr pour le rendu
+et udata-piwik pour les statistiques.</p>
+<p>Vous pouvez contribuer en suivant la documentation dédiée et en proposant des pull-requests.</p>
+        </div>
+    </section>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>The Open data</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.data.gouv.fr/api/">API</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>Topics</h5>
+                <ul>
+                    <li>
+                        <a href="None">Est-ce qu'on garde ça ?</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <h5>Network</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.gouvernement.fr">Gouvernement.fr</a>
+                    </li>
+                    <li>
+                        <a href="https://www.france.fr">France.fr</a>
+                    </li>
+                    <li>
+                        <a href="https://www.legifrance.gouv.fr">Legifrance.gouv.fr</a>
+                    </li>
+                    <li>
+                        <a href="https://www.service-public.fr">Service-public.fr</a>
+                    </li>
+                    <li>
+                        <a href="https://opendatafrance.net">Opendata France</a>
+                    </li>
+                    <li>
+                        <a href="https://www.cada.fr">CADA.fr</a>
+                    </li>
+                    <li>
+                        <a href="https://www.etalab.gouv.fr">Etalab.gouv.fr</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="col-xs-6 col-sm-3 col-md-4 col-lg-4 social">
+                <h5>Contact</h5>
+                <a href="https://github.com/etalab" title="Github">
+                    <i class="fa fa-github-square"></i>
+                </a>
+                <a href="https://twitter.com/datagouv" title="Twitter">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="https://fb.me/etalab" title="Facebook">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="https://blog.data.gouv.fr/en/feeds/all.atom" title="Atom feed">
+                    <span class="fa fa-rss-square"></span>
+                </a>
+            </section>
+
+            <section class="col-xs-9 col-xs-offset-3 col-sm-offset-0 col-sm-2 col-md-2 col-lg-2">
+                <a href="http://www.etalab.gouv.fr" title="Go to Etalab’s blog">
+                    <img class="logo" src="https://blog.data.gouv.fr/theme/images/etalab.svg" alt="Etalab logo" />
+                </a>
+            </section>
+
+            <p class="bottom-right"><a href="#">Back to top</a></p>
+
+        </div>
+    </div>
+</footer>
+<script src="https://blog.data.gouv.fr/en/../theme/js/main.min.js"></script>
+</body>
+</html>
