@@ -10,28 +10,24 @@ slug: faq
 name: faq
 lang: fr
 authors: Etalab
+template: faq
 summary: Les questions essentielles sur Data.gouv.fr
 
 buttons:
   -
     title: Citoyen
-    tagline: Les fondamentaux de l'opendata pour les citoyens
     page: faq-citoyen
   -
     title: Producteur
-    tagline: Que faut-il savoir avant de publier des données ?
     page: faq-producteur
   -
     title: Réutilisateur
-    tagline: Que faire avec les données ? Avec quels outils ?
     page: faq-reutilisateur
   -
     title: Développeur
-    tagline: Comment intéragir avec la plateforme ? Avec quelles API ?
     page: faq-developpeur
   -
     title: Intégrateur
-    tagline: Quelles sont les intégrations tierces rendues possibles ?
     page: faq-integrateur
 
 ---

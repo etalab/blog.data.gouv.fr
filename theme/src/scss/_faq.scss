@@ -1,0 +1,19 @@
+.faq-header {
+    a.thumbnail {
+        border: 2px solid $brand-primary;
+        border-radius: 0;
+
+        .caption {
+            color: $brand-primary;
+        }
+
+        &:hover {
+            background: $brand-primary;
+            text-decoration: none;
+
+            .caption {
+                color: white;
+            }
+        }
+    }
+}

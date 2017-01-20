@@ -19,6 +19,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                <li>
+                    <a href="{{ SITEURL }}/">{{ _('Blog') }}</a>
+                </li>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}
@@ -26,11 +29,29 @@
                     {% set PAGES_SORT_ATTRIBUTE = 'title' %}
                 {%- endif %}
                 {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for p in pages | sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+                    {% for p in pages | rejectattr('parent') | sort(attribute=PAGES_SORT_ATTRIBUTE)  %}
                         {% if p.url %}
-                         <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">
-                             {{ p.menulabel|default(p.title) }}
-                          </a></li>
+                        {% set children = children_of(p) %}
+                        {% set is_active = p == page or page and p.slug == page.parent %}
+                        <li class="{% if is_active %}active {% endif %}{% if children %}dropdown {% endif %}"
+                            {% if children %}
+                            data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+                            {%- endif %}>
+                             <a href="{{ SITEURL }}/{{ p.url }}" {% if children %}class="dropdown-toggle"{% endif %}>
+                                 {{ p.menulabel|default(p.title) }}
+                             </a>
+                            {% if children %}
+                            <ul class="dropdown-menu">
+                                {% for child in children %}
+                                <li>
+                                    <a href="{{ SITEURL }}/{{ child.url }}" title="{{ child.title }}">
+                                        {{ child.title }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
                         {% endif %}
                       {% endfor %}
                 {% endif %}

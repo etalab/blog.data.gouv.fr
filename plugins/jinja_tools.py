@@ -89,6 +89,14 @@ def page_for(ctx, slug):
     return get_page_from_slug(ctx, slug)
 
 
+@jinjaglobal(ctx=True)
+def children_of(ctx, page_or_slug):
+    '''Fetch children pages of a given page'''
+    slug = page_or_slug if isinstance(page_or_slug, str) else page_or_slug.slug
+    pages = ctx['pages']
+    return [p for p in pages if getattr(p, 'parent', None) == slug]
+
+
 @jinjafilter(ctx=True)
 def page_url(ctx, slug):
     page = get_page_from_slug(ctx, slug)

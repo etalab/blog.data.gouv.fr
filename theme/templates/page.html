@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% set HIDE_SIDEBAR = True %}
 {% block title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
 {% block html_lang %}{{ page.lang }}{% endblock %}
 {% block meta %}
@@ -56,11 +57,13 @@
                 get the pdf
             </a>
         {% endif %}
+        {% block page_content %}
         <div class="entry-content">
             {{ page.content }}
             {% if page.comments == 'enabled' %}
                 {% include 'includes/comments.html' %}
             {% endif %}
         </div>
+        {% endblock %}
     </section>
 {% endblock %}
