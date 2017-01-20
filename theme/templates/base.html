@@ -3,6 +3,7 @@
 <head>
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     {% include 'includes/metadata.html' %}
+    {% block canonical_rel %}{% endblock %}
 </head>
 <body>
 {% include 'includes/navbar.html' %}
