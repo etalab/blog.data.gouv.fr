@@ -67,6 +67,18 @@ inv page
 Edit the markdown file generated in the `page` folder.
 
 
+## Working on the theme
+
+The theme is located into the `theme` folder containing
+
+- the templates
+- the source assets
+- the compiled/minified/optimized assets
+- the translations
+
+More details in the README.md from the `theme` directory.
+
+
 ## Documentations
 
 You can fin more documentation on :

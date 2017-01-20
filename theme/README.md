@@ -21,6 +21,13 @@ Build with:
 npm run build
 ```
 
+This will process sources file from `src` directory to the `static` directory:
+
+- minify the JavaScript
+- compile and minify the sass/sccs style
+- optimize images
+- copy fonts
+
 To watch changes and continuously build:
 
 ```shell
