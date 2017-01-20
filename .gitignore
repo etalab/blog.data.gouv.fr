@@ -91,3 +91,4 @@ ENV/
 # Pelican build
 output/
 theme/node_modules/
+/theme/yarn.lock

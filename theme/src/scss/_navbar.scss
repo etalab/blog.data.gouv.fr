@@ -20,6 +20,7 @@
   .navbar-brand {
     $vpad: 5px;
     padding: $vpad 15px;
+    background: $body-bg;
 
     img {
       display: inline;
