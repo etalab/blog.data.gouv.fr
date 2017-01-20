@@ -1,5 +1,5 @@
 ---
-title: Découvrir l'opendata en tant que reutiliateur
+title: Découvrir l'OpenData en tant que reutiliateur
 date: 2017-01-19 18:55
 modified: 2017-01-19 18:55
 image: https://placehold.it/1920x1080
