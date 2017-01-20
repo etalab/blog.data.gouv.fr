@@ -33,6 +33,7 @@ PAGE_PATHS = [
 
 STATIC_PATHS = [
     'images',
+    'circle.yml'  # Ensure no CircleCI build on gh-pages branch
 ]
 
 PLUGIN_PATHS = [
