@@ -1,0 +1,9 @@
+pelican==3.7.1
+Pygments
+feedgenerator
+feedparser
+typogrify
+awesome-slugify
+pelican-frontmark
+babel
+invoke
