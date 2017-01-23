@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-20 03:11+0100\n"
-"PO-Revision-Date: 2017-01-20 03:12+0100\n"
+"POT-Creation-Date: 2017-01-23 06:32+0100\n"
+"PO-Revision-Date: 2017-01-23 06:33+0100\n"
 "Last-Translator: Axel Haustant <noirbizarre@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 
 #: templates/archives.html:2 templates/archives.html:7
-#: templates/includes/navbar.html:60
+#: templates/includes/navbar.html:81
 msgid "Archives"
 msgstr "Archives"
 
@@ -32,7 +32,7 @@ msgstr "Archives pour"
 msgid "Permalink to"
 msgstr "Permalien vers"
 
-#: templates/article_list.html:14
+#: templates/article_list.html:14 templates/drafts.html:24
 msgid "more"
 msgstr "plus"
 
@@ -57,27 +57,28 @@ msgstr "Catégories"
 msgid "All Categories for"
 msgstr "Toutes les catégories pour"
 
-#: templates/drafts.html:2 templates/drafts.html:7
+#: templates/drafts.html:2 templates/drafts.html:7 templates/drafts.html:13
 msgid "Drafts"
 msgstr "Brouillons"
+
+#: templates/page.html:53
+#, python-format
+msgid "Back to %(title)s"
+msgstr "Retour à %(title)s"
 
 #: templates/tags.html:16
 msgid "Tags for"
 msgstr "Tags pour"
 
-#: templates/includes/article_info.html:8
-msgid "Modified"
-msgstr "Modifié"
-
-#: templates/includes/article_info.html:17 templates/includes/sidebar.html:80
+#: templates/includes/article_info.html:19 templates/includes/sidebar.html:80
 msgid "Series"
 msgstr "Séries"
 
-#: templates/includes/article_info.html:24
+#: templates/includes/article_info.html:28
 msgid "By"
 msgstr "Par"
 
-#: templates/includes/article_info.html:30
+#: templates/includes/article_info.html:36
 msgid "Category"
 msgstr "Catégorie"
 
@@ -113,6 +114,10 @@ msgstr "Haut de page"
 msgid "Data.gouv.fr logo"
 msgstr "Logo Data.gouv.fr"
 
+#: templates/includes/navbar.html:23
+msgid "Blog"
+msgstr "Blog"
+
 #: templates/includes/pagination.html:5 templates/includes/pagination.html:7
 msgid "Newer"
 msgstr "Plus récents"
@@ -129,7 +134,7 @@ msgstr "Social"
 msgid "Recent Posts"
 msgstr "Articles récents"
 
-#: templates/includes/sidebar.html:64 templates/includes/taglist.html:2
+#: templates/includes/sidebar.html:64
 msgid "Tags"
 msgstr "Mots-clés"
 
@@ -144,3 +149,6 @@ msgstr "Article suivant"
 #: templates/includes/translations.html:3
 msgid "Lang"
 msgstr "Langue"
+
+#~ msgid "Modified"
+#~ msgstr "Modifié"

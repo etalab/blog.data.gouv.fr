@@ -8,13 +8,42 @@
   }
 }
 
+a,
+a:hover,
+a:active {
+  // color: $brand-primary;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: none;
+}
+
 .entry-content {
-  a,
-  a:hover,
-  a:active {
-    color: $brand-primary;
+
+  a {
     text-decoration: none;
-    font-weight: bold;
-    border-bottom: none;
+    border-bottom: 1px dotted;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    + em {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  figcaption, .caption {
+      font-size: small;
+      margin-bottom: 2px;
   }
 }
