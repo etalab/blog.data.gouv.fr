@@ -50,7 +50,8 @@
         {% if page.parent %}
         {% set parent = page_for(page.parent) %}
         <a href="{{ SITEURL }}/{{ parent.url }}">
-            ← {{ _('Back to %(title)s', title=page.title) }}
+            <span class="fa fa-arrow-circle-left"></span>
+            {{ _('Back to %(title)s', title=parent.title) }}
         </a>
         {% endif %}
         {% if page.title %}
@@ -71,5 +72,18 @@
             {% endif %}
         </div>
         {% endblock %}
+        {% if GITHUB_URL and PATH %}
+        <a target="_blank" class="center-block btn btn-link"
+            href="{{ GITHUB_URL }}/edit/master{{ page.source_path|replace(PATH, '') }}">
+            <span class="fa fa-pencil"></span>
+            {{ _('Improve this page') }}
+        </a>
+        {% endif %}
+        {% if parent %}
+        <a href="{{ SITEURL }}/{{ parent.url }}">
+            <span class="fa fa-arrow-circle-left"></span>
+            {{ _('Back to %(title)s', title=parent.title) }}
+        </a>
+        {% endif %}
     </section>
 {% endblock %}

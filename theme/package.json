@@ -6,9 +6,10 @@
   "scripts": {
     "build:css": "node-sass --include-path node_modules --output-style compressed -o static/css src/scss",
     "build:js": "uglifyjs src/js/main.js -m -c -o static/js/main.min.js",
+    "build:vendor": "uglifyjs `cat src/js/vendor | xargs` -c -o static/js/vendor.min.js",
     "build:images": "imagemin src/images/* -o static/images",
     "build:fonts": "cp -R node_modules/font-awesome/fonts/* static/fonts",
-    "build": "npm run build:fonts && npm run build:css && npm run build:js && npm run build:images",
+    "build": "npm run build:fonts && npm run build:css && npm run build:vendor && npm run build:js && npm run build:images",
     "watch:css": "node-sass --watch --recursive --include-path node_modules --output-style compressed -o static/css src/scss",
     "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
     "watch:images": "onchange 'src/images/*' -- npm run build:images",
@@ -30,6 +31,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
+    "rainbow-code": "^2.1.2",
     "source-sans-pro": "^2.0.10"
   }
 }

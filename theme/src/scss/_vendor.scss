@@ -34,7 +34,7 @@
 @import 'bootstrap-sass/assets/stylesheets/bootstrap/panels';
 @import 'bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed';
 @import 'bootstrap-sass/assets/stylesheets/bootstrap/wells';
-@import 'bootstrap-sass/assets/stylesheets/bootstrap/close';
+// @import 'bootstrap-sass/assets/stylesheets/bootstrap/close';
 
 // Components w/ JavaScript
 // @import 'bootstrap-sass/assets/stylesheets/bootstrap/modals';
@@ -48,3 +48,6 @@
 
 // Font Awesome
 @import 'font-awesome/scss/font-awesome';
+
+// Rainbow style
+@import 'rainbow-code/themes/sass/solarized-dark';

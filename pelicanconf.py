@@ -7,6 +7,7 @@ import yaml
 AUTHOR = 'Etalab'
 SITENAME = 'Blog.data.gouv.fr'
 SITEURL = ''
+GITHUB_URL = 'https://github.com/etalab/blog.data.gouv.fr'
 
 TIMEZONE = 'Europe/Paris'
 

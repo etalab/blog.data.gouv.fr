@@ -4,14 +4,10 @@
 <div class="row faq-header">
 {% for button in page.buttons %}
 {% set page = page_for(button.page) %}
-<div class="col-md-2">
-    <a class="thumbnail" href="{{SITEURL}}/{{ page.url }}">
-      <div class="caption">
+    <a href="{{SITEURL}}/{{ page.url }}">
         <h3>{{ button.title }}</h3>
         <p>{{ page.summary }}</p>
-      </div>
     </a>
-</div>
 {% endfor %}
 </div>
 {{ super() }}

@@ -17,6 +17,10 @@ a:active {
   border-bottom: none;
 }
 
+.body {
+  margin: 15px 0 30px
+}
+
 .entry-content {
 
   a {
@@ -38,6 +42,7 @@ a:active {
     + em {
       display: block;
       text-align: center;
+      margin: 5px 0 10px;
     }
   }
 
@@ -45,5 +50,11 @@ a:active {
   figcaption, .caption {
       font-size: small;
       margin-bottom: 2px;
+  }
+}
+
+.btn-link {
+  &:hover {
+    text-decoration: none;
   }
 }

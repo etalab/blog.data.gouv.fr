@@ -39,4 +39,14 @@
     color: #fff;
     background-color: rgba(255, 255, 255, 0.42);
   }
+
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: transparent;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: lighten($brand-primary, 5%);
+  }
 }

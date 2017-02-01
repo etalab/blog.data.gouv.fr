@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-23 06:32+0100\n"
-"PO-Revision-Date: 2017-01-23 06:33+0100\n"
+"POT-Creation-Date: 2017-01-31 18:09+0100\n"
+"PO-Revision-Date: 2017-01-31 18:10+0100\n"
 "Last-Translator: Axel Haustant <noirbizarre@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -61,10 +61,14 @@ msgstr "Toutes les catégories pour"
 msgid "Drafts"
 msgstr "Brouillons"
 
-#: templates/page.html:53
+#: templates/page.html:54 templates/page.html:85
 #, python-format
 msgid "Back to %(title)s"
 msgstr "Retour à %(title)s"
+
+#: templates/page.html:79
+msgid "Improve this page"
+msgstr "Améliorer cette page"
 
 #: templates/tags.html:16
 msgid "Tags for"
