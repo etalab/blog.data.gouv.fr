@@ -51,11 +51,10 @@ En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponib
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :
 
-![Exemple d'intégration sur le blog Etalab](/images/faq/integration/exemple-integration-blog-etalab.png)
-
+![Exemple d'intégration sur le blog Etalab]({filename}/images/faq/integration/exemple-integration-blog-etalab.png)
 *Exemple d’intégration sur le blog d’Etalab, ici avec les données de consommation d’électricité des ministères.*
 
-Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément `<div>` avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS dataset-card.
+Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément `<div>` avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS `dataset-card`.
 
 ## Intégration pour une organisation ou un territoire
 **Attention :** *ce type d’intégration est actuellement en cours de développement et l’API est susceptible de changer. Veuillez nous contacter si vous souhaitez participer aux tests préliminaires.*
@@ -93,7 +92,7 @@ Cela est activé en passant l’option `{withSearch: true}` à la méthode `load
 <script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadTerritory()"></script>
 ```
 En construisant l’`IDENTIFIANT DU TERRITOIRE` qui doit être de la forme `fr-town-13004`
-où 13004 est le code INSEE de la commune (attention il diffère du code postal).
+où `13004` est le code INSEE de la commune (attention il diffère du code postal).
 Vous pouvez aussi récupérer les jeux de données relatifs à un département `fr-county-13`
 ou une région `fr-region-93`.
 Vous devriez alors voir apparaître sur votre site un cartouche contenant les informations
@@ -126,10 +125,13 @@ C’est un choix qui doit être mûrement réfléchi
 et nous vous recommandons de passer directement par « [data.gouv.fr][] »
 si vous avez des données issues de territoires francophones.
 
-Si vous souhaitez néanmoins vous lancer dans cette aventure,
-vous pouvez commencer par analyser le code source ainsi que la documentation dédiée.
-Vous pouvez également venir en discuter avec la communauté (en anglais).
+Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser
+le [code source][udata-github] ainsi que la [documentation dédiée][udata-doc].
+Vous pouvez également venir en [discuter avec la communauté][udata-gitter] (en anglais).
 
 [data.gouv.fr]: https://www.data.gouv.fr
 [API]: https://www.data.gouv.fr/fr/apidoc/
 [udata-js]: https://github.com/DepthFrance/udata-js
+[udata-doc]: http://udata.readthedocs.io/en/latest/
+[udata-github]: https://github.com/opendatateam/udata
+[udata-gitter]: https://gitter.im/opendatateam/udata
