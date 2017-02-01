@@ -47,7 +47,7 @@
                     alt="Data.gouv.fr logo" />
             </a>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="https://blog.data.gouv.fr/en/">Blog</a>
@@ -99,15 +99,20 @@
     <div class="row">
         <div class="col-lg-12">
     <section id="content" class="body">
+        <a href="https://blog.data.gouv.fr/en/faq/">
+            <span class="fa fa-arrow-circle-left"></span>
+            Back to FAQ
+        </a>
         <h1 class="entry-title">Découvrir l’OpenData en tant que développeur</h1>
         <div class="entry-content">
             <h2>Découvrir l’OpenData en tant que développeur</h2>
 <p>Cette page contient :</p>
 <ul>
-<li>les informations relatives à l’API</li>
-<li>le moissonnage des dépôts de données ouvertes</li>
-<li>le code source de la plateforme</li>
+<li><a href="#section-api">les informations relatives à l’API</a></li>
+<li><a href="#section-moissonage">le moissonnage des dépôts de données ouvertes</a></li>
+<li><a href="#section-code">le code source de la plateforme</a></li>
 </ul>
+<p><span id="section-api"></span></p>
 <h2>Informations relatives à l’API</h2>
 <p>Le site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » propose différents moyen d'accéder au catalogue des données :</p>
 <ul>
@@ -126,11 +131,13 @@
 <p>L'intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
 (publication d'un jeu de données, création d'organisations, etc).
 Veuillez consulter la documentation dédiée pour y accéder.</p>
+<p><span id="section-moissonage"></span></p>
 <h2>Moissonnage des dépôts de données ouvertes</h2>
 <p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage,
 permettant d’être automatiquement intégrée sur la plateforme.
-Il est ainsi possible d’écrire son propre moissonneur en s’inspirant du code des moissonneurs existants,
-fournis en Open Source (comme tout le reste du site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> », distribué sous le nom uData).</p>
+Il est ainsi possible d’écrire son propre moissonneur en s’inspirant
+du <a href="https://github.com/opendatateam/udata/tree/master/udata/harvest/backends">code des moissonneurs existants</a>,
+fournis en Open Source (comme tout le reste du site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> », distribué sous le nom <a href="https://github.com/opendatateam/udata">uData</a>).</p>
 <p>Aujourd'hui, les moissoneurs suivants sont disponibles :</p>
 <ul>
 <li>CKAN (générique)</li>
@@ -139,14 +146,25 @@ fournis en Open Source (comme tout le reste du site « <a href="https://www.data
 </ul>
 <p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
 il est possible (voir recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
+<p><span id="section-code"></span></p>
 <h2>Le code source de la plateforme</h2>
-<p>L’intégralité du code de la plateforme est gratuitement disponible en Open-Source sous licence AGPL3.
+<p>L’intégralité du code de la plateforme est <a href="https://github.com/opendatateam/udata">gratuitement disponible en Open-Source</a>
+sous <a href="https://www.gnu.org/licenses/agpl-3.0.html">licence AGPL3</a>.
 Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer
 et de le personnaliser pour son usage propre en marque blanche.
-Nous avons par exemple développé les modules udata-gouvfr pour le rendu
-et udata-piwik pour les statistiques.</p>
+Nous avons par exemple développé les modules <a href="https://github.com/etalab/udata-gouvfr">udata-gouvfr</a> pour le rendu
+et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour les statistiques.</p>
 <p>Vous pouvez contribuer en suivant la documentation dédiée et en proposant des pull-requests.</p>
         </div>
+        <a target="_blank" class="center-block btn btn-link"
+            href="https://github.com/etalab/blog.data.gouv.fr/edit/master/pages/fr/faq-developpeur.md">
+            <span class="fa fa-pencil"></span>
+            Improve this page
+        </a>
+        <a href="https://blog.data.gouv.fr/en/faq/">
+            <span class="fa fa-arrow-circle-left"></span>
+            Back to FAQ
+        </a>
     </section>
         </div>
     </div>
@@ -224,6 +242,7 @@ et udata-piwik pour les statistiques.</p>
         </div>
     </div>
 </footer>
+<script src="https://blog.data.gouv.fr/en/../theme/js/vendor.min.js"></script>
 <script src="https://blog.data.gouv.fr/en/../theme/js/main.min.js"></script>
 </body>
 </html>

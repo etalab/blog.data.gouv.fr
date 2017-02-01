@@ -47,7 +47,7 @@
                     alt="Logo Data.gouv.fr" />
             </a>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="https://blog.data.gouv.fr/">Blog</a>
@@ -126,6 +126,10 @@
     <div class="row">
         <div class="col-lg-12">
     <section id="content" class="body">
+        <a href="https://blog.data.gouv.fr/faq/">
+            <span class="fa fa-arrow-circle-left"></span>
+            Retour à FAQ
+        </a>
         <h1 class="entry-title">Découvrir l'OpenData en tant qu'intégrateur</h1>
         <div class="entry-content">
             <p>La plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :</p>
@@ -157,9 +161,9 @@ Ci-dessous, la documentation technique correspondant à chacun des cas évoqués
 <p>En remplaçant <code>l’IDENTIFIANT DU JEU DE DONNÉES</code> par l’identifiant disponible sur sa page dédiée
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :</p>
-<p><img src="/images/faq/integration/exemple-integration-blog-etalab.png" alt="Exemple d'intégration sur le blog Etalab" /></p>
-<p><em>Exemple d’intégration sur le blog d’Etalab, ici avec les données de consommation d’électricité des ministères.</em></p>
-<p>Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément <code>&lt;div&gt;</code> avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS dataset-card.</p>
+<p><img src="%7Bfilename%7D/images/faq/integration/exemple-integration-blog-etalab.png" alt="Exemple d'intégration sur le blog Etalab" />
+<em>Exemple d’intégration sur le blog d’Etalab, ici avec les données de consommation d’électricité des ministères.</em></p>
+<p>Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément <code>&lt;div&gt;</code> avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS <code>dataset-card</code>.</p>
 <h2>Intégration pour une organisation ou un territoire</h2>
 <p><strong>Attention :</strong> <em>ce type d’intégration est actuellement en cours de développement et l’API est susceptible de changer. Veuillez nous contacter si vous souhaitez participer aux tests préliminaires.</em></p>
 <p>Le mécanisme pour afficher tous les jeux de données relatifs à une organisation ou un territoire
@@ -186,7 +190,7 @@ Cela est activé en passant l’option <code>{withSearch: true}</code> à la mé
 &lt;script src=&quot;https://www.data.gouv.fr/static/widgets.js&quot; id=&quot;udata&quot; async defer onload=&quot;udataScript.loadTerritory()&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>En construisant l’<code>IDENTIFIANT DU TERRITOIRE</code> qui doit être de la forme <code>fr-town-13004</code>
-où 13004 est le code INSEE de la commune (attention il diffère du code postal).
+où <code>13004</code> est le code INSEE de la commune (attention il diffère du code postal).
 Vous pouvez aussi récupérer les jeux de données relatifs à un département <code>fr-county-13</code>
 ou une région <code>fr-region-93</code>.
 Vous devriez alors voir apparaître sur votre site un cartouche contenant les informations
@@ -213,10 +217,19 @@ en développement Python et JavaScript ainsi qu’un temps non négligeable de p
 C’est un choix qui doit être mûrement réfléchi
 et nous vous recommandons de passer directement par « <a href="https://www.data.gouv.fr">data.gouv.fr</a> »
 si vous avez des données issues de territoires francophones.</p>
-<p>Si vous souhaitez néanmoins vous lancer dans cette aventure,
-vous pouvez commencer par analyser le code source ainsi que la documentation dédiée.
-Vous pouvez également venir en discuter avec la communauté (en anglais).</p>
+<p>Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser
+le <a href="https://github.com/opendatateam/udata">code source</a> ainsi que la <a href="http://udata.readthedocs.io/en/latest/">documentation dédiée</a>.
+Vous pouvez également venir en <a href="https://gitter.im/opendatateam/udata">discuter avec la communauté</a> (en anglais).</p>
         </div>
+        <a target="_blank" class="center-block btn btn-link"
+            href="https://github.com/etalab/blog.data.gouv.fr/edit/master/pages/fr/faq-integrateur.md">
+            <span class="fa fa-pencil"></span>
+            Améliorer cette page
+        </a>
+        <a href="https://blog.data.gouv.fr/faq/">
+            <span class="fa fa-arrow-circle-left"></span>
+            Retour à FAQ
+        </a>
     </section>
         </div>
     </div>
@@ -294,6 +307,7 @@ Vous pouvez également venir en discuter avec la communauté (en anglais).</p>
         </div>
     </div>
 </footer>
+<script src="https://blog.data.gouv.fr/theme/js/vendor.min.js"></script>
 <script src="https://blog.data.gouv.fr/theme/js/main.min.js"></script>
 </body>
 </html>
