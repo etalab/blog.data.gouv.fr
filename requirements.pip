@@ -4,6 +4,6 @@ feedgenerator
 feedparser
 typogrify
 awesome-slugify
-pelican-frontmark
+pelican-frontmark==1.1.0
 babel
 invoke
